@@ -24,11 +24,12 @@ public class ChatClient extends WindowAdapter implements ChatConnector {
 		status.setBorder(BorderFactory.createCompoundBorder(BorderFactory.createEtchedBorder(), BorderFactory.createEmptyBorder(1, 2, 2, 2)));
 		contentPane.add(status, BorderLayout.SOUTH);
 		ChatMessageReceiver chatReceiver = new ChatMessageReceiver(this);
-		// 클라이언트를 매개변수로 전달해 생성자 호출
+		// 占쎄깻占쎌뵬占쎌뵠占쎈섧占쎈뱜�몴占� 筌띲끆而삭퉪占쏙옙�땾嚥∽옙 占쎌읈占쎈뼎占쎈퉸 占쎄문占쎄쉐占쎌쁽 占쎌깈�빊占�
 		chatReceiver.setMessageReceiver(chatPanel);
-	
+	//test lih
 		chatWindow = new JFrame("Minimal Chat - Concept Proof");
-		contentPane.add(chatPanel);
+		contentPane.add(chatPanel); 
+		//wow
 		
 		chatWindow.setContentPane(contentPane);
 		chatWindow.setSize(450, 350);
@@ -41,7 +42,7 @@ public class ChatClient extends WindowAdapter implements ChatConnector {
 		this.addChatSocketListener(chatReceiver);
 		try {
 			P2P.getInstance().startService();
-			// P2P 클라이언트마다 하나씩 소켓과 스레드만들기
+			// P2P 占쎄깻占쎌뵬占쎌뵠占쎈섧占쎈뱜筌띾뜄�뼄 占쎈릭占쎄돌占쎈뎃 占쎈꺖�노낀�궢 占쎈뮞占쎌쟿占쎈굡筌띾슢諭얏묾占�
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
