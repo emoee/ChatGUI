@@ -51,6 +51,7 @@ public class FileReceiver implements Runnable {
 					// 프로그레스바 만들어서 출력
 				}
 				fileOut = new BufferedOutputStream(new FileOutputStream(saveFile));
+				// new?? get outputstream
 				totalBytes = 0;
 				while((byteRead = dis.read()) != -1) {
 					totalBytes++;

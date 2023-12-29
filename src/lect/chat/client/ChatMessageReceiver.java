@@ -10,8 +10,12 @@ public class ChatMessageReceiver implements Runnable, ChatSocketListener {
 	public ChatMessageReceiver(ChatConnector c) {
 		connector = c;
 		// 커넥터는 클라이언트임
+<<<<<<< HEAD
 		// test
 		
+=======
+		// minsun
+>>>>>>> 3cc0d88f1b4785bc4aa1fda187befabf1f2d3d9f
 	}
 	public void setMessageReceiver(MessageReceiver r) {
 		receiver = r;

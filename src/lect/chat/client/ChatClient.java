@@ -24,7 +24,10 @@ public class ChatClient extends WindowAdapter implements ChatConnector {
 		status.setBorder(BorderFactory.createCompoundBorder(BorderFactory.createEtchedBorder(), BorderFactory.createEmptyBorder(1, 2, 2, 2)));
 		contentPane.add(status, BorderLayout.SOUTH);
 		ChatMessageReceiver chatReceiver = new ChatMessageReceiver(this);
+<<<<<<< HEAD
 		// 占쎄깻占쎌뵬占쎌뵠占쎈섧占쎈뱜�몴占� 筌띲끆而삭퉪占쏙옙�땾嚥∽옙 占쎌읈占쎈뼎占쎈퉸 占쎄문占쎄쉐占쎌쁽 占쎌깈�빊占�
+=======
+>>>>>>> 3cc0d88f1b4785bc4aa1fda187befabf1f2d3d9f
 		chatReceiver.setMessageReceiver(chatPanel);
 	//test lih
 		chatWindow = new JFrame("Minimal Chat - Concept Proof");
